@@ -49,24 +49,112 @@ body {
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   background: rgba(255, 255, 255, 0.9);
-  width: 700px;
   height: 350px;
-  border-radius: 5px;
-  text-align: center;
+  width: 750px;
+  border-radius: 20px;
   margin: 5em auto;
 }
 
 .card h1 {
   font-family: 'Old Standard TT', serif;
   display: inline-block;
-  position: relative;
   font-size: 34px;
   color: #344055;
   margin: 0;
 }
 
 .card img {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   width: 350px;
   height: 350px;
+}
+
+.description {
+  padding: 2em;
+}
+
+.description .hint-star {
+  font-size: 22px;
+  display: inline-block;
+  margin-left: 0.5em;
+  color: gold;
+  width: 50%;
+}
+
+.description p {
+  font-family: 'Farsan', cursive;
+  text-align: center;
+  font-size: 22px;
+  color: #7d7d7d;
+}
+
+/**button**/
+.button {
+  padding-top: 5px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.button .btn {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: 03s linear;
+  transition: 03s linear;
+  background: #a754eb;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #eee;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.button .btn span {
+  font-family: 'Farsan', cursive;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.button .btn .price, .button .shopping-cart {
+  background: #333;
+  border: 0;
+  margin: 0;
+}
+
+.button .btn .shopping-cart {
+  -webkit-transform: translateX(-110%);
+          transform: translateX(-110%);
+  position: absolute;
+  background: #333;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.button .btn .hire {
+  z-index: 3;
+  font-weight: bolder;
+}
+
+.button .btn:hover .price {
+  -webkit-transform: translateX(-110%);
+          transform: translateX(-110%);
+}
+
+.button .btn:hover .shopping-cart {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 /*# sourceMappingURL=style.css.map */
